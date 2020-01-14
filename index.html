@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+
+    <div class="rooms">
+        <button id="createNewRoom">Создать новый чат</button>
+        <ul class='rooms__button'>
+            <li class="default activeRoom">default</li>
+        </ul>
+    </div>
+
+    <div class="messenger">
+        <div class="messenger__chats">
+            <div class="default activeChat"></div>
+        </div>
+        <div id='sendMessage'>
+            <input type="text" placeholder="Напишите сообщение..." id="text">
+            <button id="send">Отправить</button>
+        </div>
+    </div>
+
+    <div class="online-users" id="online">
+
+    </div>
+
+</div>
+<script src="browser.js" defer></script>
+</body>
+</html>
